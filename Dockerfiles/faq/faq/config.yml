@@ -33,8 +33,6 @@ policies:
 # # If you'd like to customize them, uncomment and adjust the policies.
 # # See https://rasa.com/docs/rasa/policies for more information.
    - name: MemoizationPolicy
-   - name: KerasPolicy
-   - name: MappingPolicy
    - name: TEDPolicy
      max_history: 1
      epochs: 100
