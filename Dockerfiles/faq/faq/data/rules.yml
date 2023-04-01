@@ -1,8 +1,8 @@
-# version: "2.0"
+# # version: "2.0"
 
-rules:
+# rules:
 
-- rule: say good morning everytime when user says good morning
-  steps:
-  - intent: chitchat/greetings_goodmorning
-  - action: utter_chitchat/greetings_goodmorning
+# - rule: say good morning everytime when user says good morning
+#   steps:
+#   - intent: chitchat/greetings_goodmorning
+#   - action: utter_chitchat/greetings_goodmorning
