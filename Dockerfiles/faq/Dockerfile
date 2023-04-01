@@ -1,5 +1,5 @@
 # from rasa base image
-FROM rasa/rasa:2.1.3
+FROM rasa/rasa:main-full
 # copy all source and the Rasa generated model
 COPY ./faq/ /app
 
