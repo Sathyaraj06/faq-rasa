@@ -15,19 +15,19 @@ pipeline:
      analyzer: char_wb
      min_ngram: 1
      max_ngram: 4
-   - name: DIETClassifier
-     epochs: 200
-     ranking_length: 5
-   - name: EntitySynonymMapper
-   - name: ResponseSelector
-     epochs: 100
-   - name: ResponseSelector
-     scale_loss: false
-     epochs: 100
-     retrieval_intent: chitchat
-   - name: FallbackClassifier
-     threshold: 0.3
-     ambiguity_threshold: 0.1
+  #  - name: DIETClassifier
+  #    epochs: 200
+  #    ranking_length: 5
+  #  - name: EntitySynonymMapper
+  #  - name: ResponseSelector
+  #    epochs: 100
+  #  - name: ResponseSelector
+  #    scale_loss: false
+  #    epochs: 100
+  #    retrieval_intent: chitchat
+  #  - name: FallbackClassifier
+  #    threshold: 0.3
+  #    ambiguity_threshold: 0.1
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
@@ -40,7 +40,3 @@ policies:
    - name: TEDPolicy
      max_history: 10
      epochs: 100
-     batch_size:
-     - 32
-     - 64
-   - name: RulePolicy
