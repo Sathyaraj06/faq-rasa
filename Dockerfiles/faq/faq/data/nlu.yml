@@ -1,7 +1,6 @@
 version: "2.0"
 
 nlu:
-
 - intent: chitchat/bot_aboutyou
   examples: |
     - tell me about your personality
